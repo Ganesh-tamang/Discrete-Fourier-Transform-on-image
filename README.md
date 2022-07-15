@@ -8,6 +8,6 @@ First we will see how to find Fourier Transform using Numpy. Numpy has an FFT pa
 
 Now once you got the result, zero frequency component (DC component) will be at top left corner. If you want to bring it to center, you need to shift the result by N/2 in both the directions. This is simply done by the function, np.fft.fftshift(). (It is more easier to analyze). Once you found the frequency transform, you can find the magnitude spectrum
 
-#Fourier Transform in OpenCV
+# Fourier Transform in OpenCV
 
 OpenCV provides the functions cv2.dft() and cv2.idft() for this. It returns the same result as previous, but with two channels. First channel will have the real part of the result and second channel will have the imaginary part of the result. The input image should be converted to np.float32 first. We will see how to do it.
